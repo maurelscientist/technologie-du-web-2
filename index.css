@@ -1,0 +1,322 @@
+:root {
+        --bleu: #003d80;
+        --jaune: #ffcc00;
+        --clair: #f4f7fb;
+        --sombre: #1a1a1a;
+        --text-clair: #ffffff;
+        --text-sombre: #1a1a1a;
+    }
+
+    body {
+        background-color: var(--clair);
+        color: var(--text-sombre);
+        font-family: 'Segoe UI', sans-serif;
+        transition: 0.3s;
+    }
+    body.dark {
+        background-color: #121212;
+        color: #eaeaea;
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+    /* Header & Footer */
+    body.dark header,
+    body.dark footer {
+        background-color: #0a1a2f;
+    }
+
+    /* Navbar */
+    body.dark .navbar-brand {
+        color: var(--jaune) !important;
+    }
+
+    body.dark .nav-link {
+        color: #eaeaea !important;
+    }
+
+    body.dark .nav-link:hover {
+        color: var(--jaune) !important;
+    }
+
+    /* Sections */
+    body.dark .apropos,
+    body.dark .services,
+    body.dark .newsletter {
+        background-color: #161616;
+    }
+
+    /* Cartes & box */
+    body.dark .card,
+    body.dark .service-box,
+    body.dark .card-autres {
+        background-color: #1f1f1f;
+        color: #eaeaea;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+    }
+
+    /* Services hover */
+    body.dark .service-box:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 6px 25px rgba(255, 204, 0, 0.15);
+    }
+
+    /* Section statistiques */
+    body.dark .stats {
+        background: linear-gradient(135deg, #0a1a2f, #111);
+        color: #ffffff;
+    }
+
+    /* Marquee */
+    body.dark .marquee {
+        background-color: #1c1c1c;
+        color: #ffcc00;
+    }
+
+    body.dark .marquee .black {
+        color: #ffcc00;
+    }
+
+    /* Inputs */
+    body.dark input,
+    body.dark .form-control {
+        background-color: #222;
+        color: #fff;
+        border: 1px solid #444;
+    }
+
+    body.dark input::placeholder {
+        color: #aaa;
+    }
+
+    /* Boutons */
+    body.dark #darkBtn,
+    body.dark #github,
+    body.dark #linkedin {
+        background-color: var(--jaune);
+        color: #000;
+    }
+
+    /* Hero overlay un peu plus sombre */
+    body.dark .hero::after {
+        background: rgba(0, 0, 0, 0.65);
+    }
+
+    body.dark #newsletter {
+        background-color: (green);
+        /* vert clair */
+        padding: 40px 20px;
+    }
+
+    header {
+        background-color: var(--bleu);
+        padding: 10px 0;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .navbar-brand {
+        color: var(--jaune) !important;
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+
+    .nav-link {
+        color: #fff !important;
+        font-weight: 600;
+        margin: 0 10px;
+    }
+
+    .nav-link:hover {
+        color: var(--jaune) !important;
+    }
+
+    .hero {
+        background-image: url('https://picsum.photos/1200/600?blur');
+        /* remplace par une image UPB */
+        background-size: cover;
+        background-position: center;
+        height: 70vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #fff;
+        position: relative;
+    }
+
+    .hero::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 51, 102, 0.6);
+        /* filtre bleu marine */
+    }
+
+    .hero-content {
+        position: relative;
+        z-index: 1;
+    }
+
+    .hero-content a {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #fff;
+        text-decoration: none;
+        border: 2px solid #fff;
+        padding: 15px 30px;
+        border-radius: 8px;
+        transition: 0.3s;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    .hero-content a:hover {
+        background-color: #ffc107;
+        /* jaune accent */
+        color: #000;
+        border-color: #ffc107;
+    }
+
+    .apropos {
+        padding: 60px 20px;
+    }
+
+    .apropos h2 {
+        color: var(--bleu);
+        font-weight: bold;
+    }
+
+    .services {
+        padding: 60px 20px;
+        background-color: #eef4ff;
+    }
+
+    .service-box {
+        background: #fff;
+        padding: 25px;
+        border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        transition: 0.3s;
+    }
+
+    .service-box:hover {
+        transform: translateY(-8px);
+    }
+
+    .stats {
+        padding: 60px 20px;
+        background-color: var(--bleu);
+        color: #fff;
+    }
+
+    .stat-box {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .stat-box h3 {
+        font-size: 2.5rem;
+        color: var(--jaune);
+    }
+
+    .card-autres {
+        position: relative;
+        overflow: hidden;
+        border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-autres img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+
+    .card-autres a {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: rgba(0, 61, 128, 0.85);
+        padding: 12px 25px;
+        color: var(--jaune);
+        font-weight: bold;
+        border-radius: 8px;
+        text-decoration: none;
+    }
+
+    footer {
+        background-color: var(--bleu);
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+    }
+
+    #darkBtn {
+        background-color: var(--jaune);
+        border: none;
+        padding: 8px 15px;
+        border-radius: 8px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    #github {
+        background-color: var(--jaune);
+        border: none;
+        padding: 8px 14px;
+        border-radius: 7px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    #linkedin {
+        background-color: var(--jaune);
+        border: none;
+        padding: 8px 14px;
+        border-radius: 7px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .marquee {
+        width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+        box-sizing: border-box;
+        background: #f8f9fa;
+        /* fond bleu marine */
+        padding: 15px;
+        font-size: 1.3rem;
+        font-weight: bold;
+    }
+
+    .marquee span {
+        display: inline-block;
+        padding-right: 50px;
+        /* espace entre les noms */
+        animation: scroll 30s linear infinite;
+    }
+
+    @keyframes scroll {
+        0% {
+            transform: translateX(100%);
+        }
+
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+
+    /* Couleurs arc-en-ciel */
+    .black {
+        color: black;
+    }
+
+    #newsletter {
+        background-color: #e9f7ef;
+        /* vert clair */
+        padding: 40px 20px;
+        text-align: center;
+    }

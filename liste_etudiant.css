@@ -1,0 +1,125 @@
+/* --- Base --- */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+/* --- Tableau --- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  background: #fff;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #007BFF;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* --- Actions --- */
+.actions a {
+  margin-right: 8px;
+  padding: 5px 8px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 0.9em;
+}
+
+.actions a:nth-child(1) { background-color: #1ce744; color: white; }
+.actions a:nth-child(2) { background-color: #ffc107; color: black; }
+.actions a:nth-child(3) { background-color: #dc3545; color: white; }
+
+.actions a:hover { opacity: 0.8; }
+
+/* --- Mode sombre --- */
+.dark-mode {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+.dark-mode table {
+  box-shadow: 0 2px 6px rgba(255,255,255,0.1);
+  background: #1e1e1e;
+}
+
+.dark-mode th {
+  background-color: #333;
+}
+
+.dark-mode tr:nth-child(even) {
+  background-color: #1e1e1e;
+}
+
+.dark-mode td, .dark-mode th {
+  border-color: #444;
+}
+/* Style de la sidebar */
+        .sidebar {
+            height: 100%;
+            width: 0; /* cachée par défaut */
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #e0dfdfff;
+            overflow-x: hidden;
+            transition: 0.3s;
+            padding-top: 60px;
+        }
+
+        .sidebar a {
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 18px;
+            color: #f1f1f1;
+            display: block;
+            transition: 0.2s;
+        }
+
+        .sidebar a:hover {
+            background-color: #575757;
+        }
+
+        .sidebar .closebtn {
+            position: absolute;
+            top: 15px;
+            right: 25px;
+            font-size: 30px;
+            color: rgb(11, 7, 7);
+            cursor: pointer;
+        }
+
+       
+        .openbtn {
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #333;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            margin-bottom: 15px;
+        }
+
+        .openbtn:hover {
+            background-color: #444;
+        }
